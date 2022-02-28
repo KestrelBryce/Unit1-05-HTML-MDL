@@ -13,6 +13,9 @@ jobs:
     steps: 
       - name: Check out Git repository      
         uses: actions/checkout@master
+        
+      - name: Run Github Super Linter
+        uses: github/super-linter@main
         env:
           VALIDATE_ALL_CODEBASE: true
           VALIDATE_JAVASCRIPT_STANDARD: false
