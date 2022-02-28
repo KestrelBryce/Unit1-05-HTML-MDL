@@ -1,0 +1,32 @@
+###############################################
+
+# Run Github's Super Linter against code base #
+
+###############################################
+
+
+
+name: Github's Super Linter
+
+
+on: push
+  
+
+
+
+jobs: 
+  
+  run-linters:
+    
+    name: Github's Super Linter
+    
+    runs-on: ubantu-latest
+    
+    
+    
+    steps:
+      
+      - name: Check out Git repository
+
+      
+        uses: actions/checkout@master
