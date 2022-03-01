@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- ICS2O-Unit1-05-HTML-MDL -->
 <html lang="en-ca">
   <head>
     <meta charset="utf-8">
@@ -14,6 +15,44 @@
   </head>
   <body>
     <!-- Google's MDL -->
-    <script defer src="">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <div class = "mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <!-- web page header -->
+      <header class = "mdl-layout__header">
+        <div class = "mdl-layout__header-row">
+          <span class = "mdl-layout-title">C₁₀H₁₂N₂O transmitter</span>
+        </div>
+      </header>
+      <br>
+
+      <!-- container for webpage content -->
+      <main class = "mdl-layout__content" style = "padding-left:20px">
+        <!-- Get user input -->
+        <div class = "page-content">Enter your name to recieve C₁₀H₁₂N₂O:</div>
+
+        <!-- Simple textfield for integers (not decimals)-->
+        <form action "#">
+          <div class="mdl-textfield mld-js-textfield">
+            <!-- input pattern attribute -->
+            <input class"mdl-textfield__input" type="text" pattern="[0-9]*" id="demo-input" />
+            <!-- mdl-textfield__label -->
+            <label class="mdl-textfield__label" for="demo-input">Your Name</label>
+            <!-- class "mdl-textfield__error" -->
+            <span class="mdl-textfield__error" style = "padding-left:10px">They are not loved</span>
+          </div>
+        </form>
+
+        <!-- raised button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >
+          Recieve C₁₀H₁₂N₂O
+        </button>
+        <br></br>
+        <!-- link to second web page -->
+        <p>
+          Click here for <a href="./more_mld.html">more C₁₀H₁₂N₂O</a>
+        </p>
+      </main>
+    </div>
   </body>
 </html>
